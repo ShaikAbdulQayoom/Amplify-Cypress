@@ -1,0 +1,12 @@
+{
+  "data": {
+    "createTodo": {
+      "id": "ca083489-7aa9-4634-80e1-86569ff23d70",
+      "name": "Create New Todo",
+      "description": "Creating new todos to verify creation.",
+      "createdAt": "2024-02-12T07:16:51.237Z",
+      "updatedAt": "2024-02-12T07:16:51.237Z",
+      "__typename": "Todo"
+    }
+  }
+}
