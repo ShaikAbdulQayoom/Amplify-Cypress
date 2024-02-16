@@ -1,0 +1,6 @@
+mutation MyMutation($id: ID!, $name: String!) {
+  updateTodo(input: {id: $id, name: $name}) {
+    id
+    name
+  }
+}

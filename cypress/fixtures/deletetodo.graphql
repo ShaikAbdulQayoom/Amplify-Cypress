@@ -1,0 +1,6 @@
+mutation MyMutation($id: ID!) {
+  deleteTodo(input: {id: $id}) {
+    description
+    id
+  }
+}
