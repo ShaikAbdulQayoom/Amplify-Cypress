@@ -1,0 +1,81 @@
+{
+  "providers": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-viteproject-dev-121130-authRole",
+      "UnauthRoleArn": "arn:aws:iam::730335362513:role/amplify-viteproject-dev-121130-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::730335362513:role/amplify-viteproject-dev-121130-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-viteproject-dev-121130-deployment",
+      "UnauthRoleName": "amplify-viteproject-dev-121130-unauthRole",
+      "StackName": "amplify-viteproject-dev-121130",
+      "StackId": "arn:aws:cloudformation:us-east-1:730335362513:stack/amplify-viteproject-dev-121130/c2a31860-c971-11ee-ac80-1212858564cf",
+      "AmplifyAppId": "d3k7vpu1wzj45r"
+    }
+  },
+  "api": {
+    "viteproject": {
+      "dependsOn": [],
+      "output": {
+        "authConfig": {
+          "additionalAuthenticationProviders": [],
+          "defaultAuthentication": {
+            "apiKeyConfig": {
+              "apiKeyExpirationDays": 7
+            },
+            "authenticationType": "API_KEY"
+          }
+        },
+        "GraphQLAPIIdOutput": "ejkxywn7rbf2vilyj2ukverv4a",
+        "GraphQLAPIEndpointOutput": "https://5xp2dsgwnnbqxpgfopycnp3jkq.appsync-api.us-east-1.amazonaws.com/graphql",
+        "GraphQLAPIKeyOutput": "da2-gzb6jcwcybe5rjcufjg5deq3r4"
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "AppSync",
+      "lastPushTimeStamp": "2024-02-19T09:36:22.738Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-viteproject-dev-121130-deployment/amplify-cfn-templates/api/cloudformation-template.json",
+        "logicalId": "apiviteproject"
+      }
+    }
+  },
+  "auth": {
+    "viteproject83a9df91": {
+      "customAuth": false,
+      "dependsOn": [],
+      "frontendAuthConfig": {
+        "mfaConfiguration": "OFF",
+        "mfaTypes": [
+          "SMS"
+        ],
+        "passwordProtectionSettings": {
+          "passwordPolicyMinLength": 8,
+          "passwordPolicyCharacters": []
+        },
+        "signupAttributes": [
+          "EMAIL"
+        ],
+        "socialProviders": [],
+        "usernameAttributes": [],
+        "verificationMechanisms": [
+          "EMAIL"
+        ]
+      },
+      "providerPlugin": "awscloudformation",
+      "service": "Cognito",
+      "output": {
+        "UserPoolId": "us-east-1_KEybTPyk2",
+        "AppClientIDWeb": "68r7qbumjp7qvqr66gudt045ca",
+        "AppClientID": "5j046bsdvbau3po8tveutnj27k",
+        "IdentityPoolId": "us-east-1:578b97b5-2ccd-43a4-badf-a15dde0267e8",
+        "UserPoolArn": "arn:aws:cognito-idp:us-east-1:730335362513:userpool/us-east-1_KEybTPyk2",
+        "IdentityPoolName": "viteproject83a9df91_identitypool_83a9df91__dev",
+        "UserPoolName": "viteproject83a9df91_userpool_83a9df91"
+      },
+      "lastPushTimeStamp": "2024-02-19T09:36:22.750Z",
+      "providerMetadata": {
+        "s3TemplateURL": "https://s3.amazonaws.com/amplify-viteproject-dev-121130-deployment/amplify-cfn-templates/auth/viteproject83a9df91-cloudformation-template.json",
+        "logicalId": "authviteproject83a9df91"
+      }
+    }
+  }
+}
